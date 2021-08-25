@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <%- include("_head.ejs") %>
+    
+    <!-- Styles -->
+    <link rel='stylesheet' type='text/css' href='/public/styles/home.css'/>
+    <!-- Script -->
+    <script defer src='/public/script/home.js'></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%- include("_nav.ejs") %>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron-fluid">
+
+        <div class="jumbotron-desc">
+            <h1 class="jumbotron-title">MY Haven</h1>
+            <p class="jumbotron-text">Your One-Stop Covid-19 Battling Center.</p>
+            <p class='jumbotron-text' style='font-size: 2rem; opacity: 75%;'>#kitajagakita</p>
+        </div>
+        <a href="/hotels" class="jumbotron-btn">Apply Now</a>
+    </div>
+
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2 class="feature__title">Be Our Partner</h2>
+            <p class='feature__desc'>
+                The rise of Covid-19 pandemic had plunged our country into the lowest ebb. Be a part of our project, you can contribute a small effort to make huge changes in recovering country’s economy. 
+            </p>
+
+            <div class='feature__container container'>
+                <a href='/partner' class='feature__card'>
+                    <i class="feature__card__icon fas fa-hotel"></i>
+                    <h4 class='feature__card__title'>Hotel</h4>
+                    <p class='feature__card__text'>Get connected with medical centers and F&B industry to provide quarantine services in your hotel.</p>
+                </a>
+
+                <a href='/partner' class='feature__card'>
+                    <i class="feature__card__icon fas fa-hand-holding-medical"></i>
+                    <h4 class='feature__card__title'>Medical Centre</h4>
+                    <p class='feature__card__text'>Provide medical support to patient in one-stop quarantine centre</p>
+                </a>
+
+                <a href='/partner' class='feature__card'>
+                    <i class="feature__card__icon fas fa-utensils"></i>
+                    <h4 class='feature__card__title'>Food and Beverages</h4>
+                    <p class='feature__card__text'>Get more variety of food in your quarantine area</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <%- include("_footer.ejs") %>
+</body>
+
+</html>

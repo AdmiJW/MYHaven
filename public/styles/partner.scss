@@ -1,0 +1,56 @@
+@import "nav_footer";
+
+
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #f6f6f6, #f6f6f6 20px, #ffffff 20px, #ffffff );
+    background-size: 40px 100%;
+}
+
+main {
+    margin: var(--nav-height) 0;
+    min-height: calc(100vh - var(--nav-height));
+}
+
+.title {
+    margin: 2em 0 0 0;
+    @include setFont(6rem, $weight: bold, $align: center);
+}
+
+.desc {
+    margin: 0 0 3em 0;
+    @include setFont(2rem, $weight: lighter, $align: center);
+}
+
+.form {
+    @include flex(column);
+    gap: 2em;
+}
+
+.form-control {
+    @include setFont(2rem);
+}
+
+.form__button {
+    align-self: flex-start;
+    @include setFont(2rem);
+    padding: .25em 1em;
+}
+
+.form__condition {
+    @include flex(row, flex-start, center);
+    gap: 10px;
+
+    .form__checkbox__text {
+        @include setFont(1.3rem);
+    }
+}
+
+#map {
+    min-height: 400px;
+}
+
+.custom-map-control-button {
+    padding: 10px;
+    margin: 10px;
+}

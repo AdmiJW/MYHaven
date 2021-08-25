@@ -1,0 +1,63 @@
+@import "nav_footer";
+
+
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #f6f6f6, #f6f6f6 20px, #ffffff 20px, #ffffff );
+    background-size: 40px 100%;
+}
+
+.header {
+    padding: var(--nav-height) 10px 0 10px;
+    margin: 3em auto;
+}
+
+.header__title {
+    @include setFont(5rem, $weight: bold);
+    margin: .75em 0 .25em 0;
+}
+
+.header__desc {
+    @include setFont(2rem, $weight: lighter);
+    margin-bottom: 2em;
+}
+
+.header__addr {
+    @include setFont(2rem, $weight: lighter);
+    margin: 2em 0 .5em 0;
+}
+
+.header__btn {
+    @include setFont(2rem, $weight: lighter);
+    margin-bottom: 5em;
+}
+
+.jumbotron-fluid {
+    background-color: #3C644A;
+    padding: 70px 0;
+}
+
+.job-list {
+    @include flex(row, space-around);
+    flex-wrap: wrap;
+}
+
+.job__card {
+    max-width: 250px;
+    padding: 2em .5em;
+    margin: .5em;
+}
+
+.card-img-top {
+    font-size: 125px;
+    color: rgb(173, 173, 173);
+    text-align: center;
+}
+
+.card-title {
+    @include setFont(3rem, $weight: bold);
+}
+
+.card__location, .card__description, .card__btn {
+    @include setFont(1.25rem);
+}

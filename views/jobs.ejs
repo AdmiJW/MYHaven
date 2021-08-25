@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <%- include("_head.ejs") %>
+    
+    <!-- Styles -->
+    <link rel='stylesheet' type='text/css' href='/public/styles/jobs.css'/>
+    <!-- Script -->
+    <script defer src='/public/script/jobs.js'></script>
+ </head>
+
+<body>
+    <!-- Navbar -->
+    <%- include("_nav.ejs") %>
+
+    <!-- Main Content -->
+    <main>
+        <div class='header container'>
+            <h1 class='header__title'>Jobs</h1>
+            <p class='header__desc'>Look for the nearest available gig in your proximity</p>
+
+            <input type='text' class='header__addr form-control' name='address' placeholder='Search Address...' required>
+            <button type='button' class='header__btn btn btn-primary'>Search</button>
+        </div>
+
+        <div class='jumbotron-fluid'>
+            <div class='job-list container'>
+
+                <div class="job__card card">
+                    <i class="card-img-top fas fa-running"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Errand</h5>
+                        <p class="card-text">
+                            <p class='card__location'><i class="fas fa-map-marker-alt"></i> 1234, Jalan ABC, Taman BCD, 12345 Kuala Lumpur</p>
+                            <p class='card__description'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quo?</p>
+                        </p>
+                        <a href="#" class="card__btn btn btn-primary">Take Job</a>
+                    </div>
+                </div>
+
+                <div class="job__card card">
+                    <i class="card-img-top fas fa-broom"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Cleaner</h5>
+                        <p class="card-text">
+                            <p class='card__location'><i class="fas fa-map-marker-alt"></i> 1234, Jalan ABC, Taman BCD, 12345 Kuala Lumpur</p>
+                            <p class='card__description'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quo?</p>
+                        </p>
+                        <a href="#" class="card__btn btn btn-primary">Take Job</a>
+                    </div>
+                </div>
+
+                <div class="job__card card">
+                    <i class="card-img-top fas fa-running"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Errand</h5>
+                        <p class="card-text">
+                            <p class='card__location'><i class="fas fa-map-marker-alt"></i> 1234, Jalan ABC, Taman BCD, 12345 Kuala Lumpur</p>
+                            <p class='card__description'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quo?</p>
+                        </p>
+                        <a href="#" class="card__btn btn btn-primary">Take Job</a>
+                    </div>
+                </div>
+
+                <div class="job__card card">
+                    <i class="card-img-top fas fa-broom"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Cleaner</h5>
+                        <p class="card-text">
+                            <p class='card__location'><i class="fas fa-map-marker-alt"></i> 1234, Jalan ABC, Taman BCD, 12345 Kuala Lumpur</p>
+                            <p class='card__description'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quo?</p>
+                        </p>
+                        <a href="#" class="card__btn btn btn-primary">Take Job</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include("_footer.ejs") %>
+</body>
+
+</html>

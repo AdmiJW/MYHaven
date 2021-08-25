@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <%- include("_head.ejs") %>
+    
+    <!-- Styles -->
+    <link rel='stylesheet' type='text/css' href='/public/styles/hotels.css'/>
+    <!-- Script -->
+    <script defer src='/public/script/hotels.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-JYcrwCl8DQeVLWM9VYn6w15eCtmknkw&callback=initMap&libraries=&v=weekly" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%- include("_nav.ejs") %>
+
+    <!-- Main Content -->
+    <main>
+        <div class='header container'>
+            <h1 class='header__title'>Quarantine Hotels</h1>
+            <p class='header__desc'>Search for the nearest quarantine hotels available to you.</p>
+
+            <input type='text' class='header__addr form-control' name='address' placeholder='Search Address...' required>
+            <button type='button' class='header__btn btn btn-primary'>Search</button>
+        </div>
+
+        <div class='jumbotron-fluid'>
+            <div id='map'></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <%- include("_footer.ejs") %>
+</body>
+
+</html>
