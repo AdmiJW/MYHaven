@@ -4,6 +4,8 @@
 
 __VISIT [HERE](https://my-haven.herokuapp.com/)__
 
+---
+
 ## Inspiration
 Undeniably, covid 19 had hit hard on many industries. Malls and many businesses in Malaysia were forced to shut down as the country is in lockdown to tackle a worsening surge of the coronavirus that has put its health care system on the verge of collapse.
 

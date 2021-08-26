@@ -3,6 +3,8 @@ const fetch = require('node-fetch');
 const router = new express.Router();
 const path = require('path');
 
+const rateLimiter = require('express-rate-limit');
+
 const MemoryDB = require( path.join(__dirname, '..', 'memory_db', 'memoryDB.js') );
 
 require('dotenv').config();
@@ -11,6 +13,12 @@ require('dotenv').config();
 //=================================
 // Hotels Operation API
 //=================================
+router.use( rateLimiter({
+    windowMs: 10 * 60 * 1000, // 10 minutes
+    max: 200 // limit each IP to 200 requests per windowMs
+}));
+
+
 router.get('/get_hotels', (req,res)=> {
     res.json( MemoryDB.get_hotels() );
 });
